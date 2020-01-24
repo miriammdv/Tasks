@@ -36,3 +36,8 @@ summary (berenCor)
 berenANOVA <- aov (beren3$value [Feeds] ~ beren3$caregiver [Feeds])
 boxplot (beren3$value [Feeds] ~ beren3$caregiver [Feeds] , xlab= "who gave the bottle" , ylab = "amount of milk consumed (oz)")
 par (las=1, mar=c (5, 5, 1, 1) , mgp=c (2, 0.5, 0) , tck = -0.01)
+plot(as.numeric(names(totalFeed)), totalFeed, type="b", pch=16, xlab="age in days", ylab="ounces of milk")
+abline(h=avgFeed, lty=2, col='red')
+dev.off()
+question #1:
+In hypothesis 1, the weight has a lot of impact on his weight meaning a positive interaction and correlation. In hypothesis 2,  
